@@ -1,0 +1,5 @@
+# Hide styles.css.map
+styles/styles.css.map
+
+# Hide .scss files
+*.scss
