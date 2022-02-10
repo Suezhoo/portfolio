@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+@import "./fonts";
+@import "./header";
+@import "./vars";

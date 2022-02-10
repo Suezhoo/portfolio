@@ -1,0 +1,107 @@
+@import "./vars";
+
+.nav {
+    background-color: $blue;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 53px;
+    border-bottom: 3px solid $black;
+}
+
+#hamburger-toggle {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    height: 25px;
+    width: 50px;
+}
+
+.hamburger-container {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    background-color: $white;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    height: 5px;
+    width: 50px;
+    border-radius: 25px;
+    transition: all 100ms;
+}
+.hamburger::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.hamburger::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.hamburger-items {
+    display: none;
+}
+
+.hamburger-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 53px;
+    width: 100%;
+    color: $black;
+    background-color: $white;
+    list-style-type: none;
+    font-size: 20px;
+    transition: all 300ms ease-in-out;
+}
+
+.hamburger-items > li {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-items > li:not(:last-child) {
+    border-bottom: 3px solid $darkWhite;
+}
+
+.hamburger-items > li:hover {
+    background-color: $darkWhite;
+}
+
+#hamburger-toggle:checked ~ .hamburger-items {
+    display: flex;
+}
+
+#hamburger-toggle:checked ~ .hamburger-container .hamburger {
+    background-color: rgba($color: #ffffff, $alpha: 0);
+}
+
+#hamburger-toggle:checked ~ .hamburger-container .hamburger::before {
+    display: block;
+    top: 0px;
+    transform: rotate(-155deg);
+}
+#hamburger-toggle:checked ~ .hamburger-container .hamburger::after {
+    display: block;
+    top: 0px;
+    transform: rotate(155deg);
+}
