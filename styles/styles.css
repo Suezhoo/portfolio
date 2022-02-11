@@ -139,4 +139,132 @@
   -webkit-transform: rotate(155deg);
           transform: rotate(155deg);
 }
+
+body main {
+  height: calc(100vh - 53px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title h1 {
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.title #underline {
+  margin-top: 10px;
+  margin-left: 25%;
+  width: 50%;
+  border-bottom: 2px solid #0f0f10;
+}
+
+.project-template {
+  margin-top: 80px;
+  width: 90%;
+}
+
+.project-template .project-image-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px 25px 0 0;
+  background-color: #101321;
+  width: 100%;
+  height: 179px;
+}
+
+.project-template .project-logo {
+  width: 64px;
+  height: 64px;
+}
+
+.project-template .project-logo-res {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.project-template #project-logo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.project-template .project-text-area {
+  font-size: 14px;
+  background-color: #f6f8f9;
+  padding: 20px 10px;
+}
+
+.project-template .project-text-area div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.project-template .project-text-area div span:first-of-type {
+  padding-left: 5px;
+}
+
+.project-template .project-text-area div input {
+  padding: 0 5px;
+  font: inherit;
+  min-width: 20px;
+  width: 20px;
+  max-width: 225px;
+  background-color: #f6f8f9;
+  border: none;
+}
+
+.project-template .project-text-area div input:focus-visible {
+  outline: none;
+}
+
+.project-template .project-text-area .project-edit-text-area {
+  padding-left: 27%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-template .project-text-area p {
+  font-size: 1rem;
+}
+
+.project-template .project-text-area .project-name {
+  font-weight: 500;
+}
+
+#empty {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  white-space: pre;
+}
 /*# sourceMappingURL=styles.css.map */
