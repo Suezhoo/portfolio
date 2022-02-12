@@ -17,6 +17,7 @@ body main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .title h1 {
@@ -73,27 +74,38 @@ body main {
 .project-template .project-text-area div {
     display: flex;
     flex-direction: row;
+    padding: 5px 0px;
 }
 
 .project-template .project-text-area div span:first-of-type {
     padding-left: 5px;
 }
 
+.project-template .project-text-area div textarea,
 .project-template .project-text-area div input {
-    padding: 0 5px;
+    text-align: center;
     font: inherit;
     min-width: 20px;
     width: 20px;
     max-width: 225px;
     background-color: $darkWhite;
     border: none;
+    text-overflow: ellipsis;
+    resize: none;
 }
 
+.project-template .project-text-area div #description {
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.project-template .project-text-area div textarea:focus-visible,
 .project-template .project-text-area div input:focus-visible {
     outline: none;
 }
 
 .project-template .project-text-area .project-edit-text-area {
+    padding-top: 10px;
     padding-left: 27%;
     display: flex;
     flex-direction: column;
@@ -107,9 +119,42 @@ body main {
     font-weight: 500;
 }
 
-#empty {
+.hide-span {
     position: absolute;
     height: 0;
     overflow: hidden;
     white-space: pre;
+}
+
+.project-template .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-template .buttons p {
+    color: $white;
+    background-color: $black;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px 0px;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+}
+
+.project-template .buttons p:active {
+    box-shadow: 0px 2px 2px $lightblue;
+}
+
+.project-template .buttons p:first-child {
+    width: 22%;
+}
+
+.project-template .buttons p:last-child {
+    width: 48%;
+}
+
+.project-template .buttons p span {
+    font-size: 14px;
+    font-weight: 500;
 }

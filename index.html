@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Suezhoo - Portfolio</title>
         <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <script src="./scripts/main.js" defer type="module"></script>
     </head>
     <body>
@@ -46,40 +47,45 @@
                         <div class="name-container">
                             <label for="name">name:</label>
                             <span>"</span>
+                            <span id="emptyName" class="hide-span"></span>
                             <input
                                 type="text"
                                 name="name"
                                 id="name"
-                                value="..."
-                            />
-                            <span>"</span>
-                        </div>
-                        <div class="description-container">
-                            <label for="description">description:</label>
-                            <span>"</span>
-                            <input
-                                type="text"
-                                name="description"
-                                id="description"
-                                maxlength="155"
-                                value="..."
+                                placeholder="..."
                             />
                             <span>"</span>
                         </div>
                         <div class="url-container">
                             <label for="url">URL:</label>
                             <span>"</span>
-                            <span id="empty"></span>
+                            <span id="emptyURL" class="hide-span"></span>
                             <input
                                 type="text"
                                 name="url"
                                 id="url"
-                                value="..."
+                                placeholder="..."
                             />
+                            <span>"</span>
+                        </div>
+                        <div class="description-container">
+                            <label for="description">description:</label>
+                            <span>"</span>
+                            <span id="emptyDesc" class="hide-span"></span>
+                            <textarea
+                                name="description"
+                                id="description"
+                                placeholder=" ..."
+                                maxlength="200"
+                            ></textarea>
                             <span>"</span>
                         </div>
                     </div>
                     <p>}</p>
+                </div>
+                <div class="buttons">
+                    <p>.cancel()</p>
+                    <p>.addProject(<span>project</span>)</p>
                 </div>
             </div>
         </main>
