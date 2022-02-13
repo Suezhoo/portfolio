@@ -22,7 +22,7 @@ window.onload = function () {
     });
 };
 
-function resize(span, input) {
+export function resize(span, input) {
     span.textContent = input.value;
     input.style.width = span.offsetWidth + "px";
 }

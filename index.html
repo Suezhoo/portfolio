@@ -4,10 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Suezhoo - Portfolio</title>
-        <link rel="stylesheet" href="./styles/styles.css" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <script src="./scripts/main.js" defer type="module"></script>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles/styles.css" />
     </head>
     <body>
         <header>
@@ -18,76 +16,12 @@
                         <div class="hamburger"></div>
                     </label>
                     <ul class="hamburger-items">
-                        <li>.home()</li>
-                        <li>.projects()</li>
+                        <li><a href="#">.home()</a></li>
+                        <li><a href="../html/projects.html">.projects()</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="title">
-                <h1>ADD PROJECT</h1>
-                <div id="underline"></div>
-            </div>
-            <div class="project-template">
-                <div class="project-image-area">
-                    <label for="project-logo" class="project-logo-container">
-                        <img
-                            src="./assets/images/icons/PNG/file-picture-white.png"
-                            alt="search-image"
-                            class="project-logo"
-                        />
-                        <p class="project-logo-res">128x128</p>
-                    </label>
-                    <input type="file" name="project-logo" id="project-logo" />
-                </div>
-                <div class="project-text-area">
-                    <p>const <span class="project-name">project</span> = {</p>
-                    <div class="project-edit-text-area">
-                        <div class="name-container">
-                            <label for="name">name:</label>
-                            <span>"</span>
-                            <span id="emptyName" class="hide-span"></span>
-                            <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                placeholder="..."
-                            />
-                            <span>"</span>
-                        </div>
-                        <div class="url-container">
-                            <label for="url">URL:</label>
-                            <span>"</span>
-                            <span id="emptyURL" class="hide-span"></span>
-                            <input
-                                type="text"
-                                name="url"
-                                id="url"
-                                placeholder="..."
-                            />
-                            <span>"</span>
-                        </div>
-                        <div class="description-container">
-                            <label for="description">description:</label>
-                            <span>"</span>
-                            <span id="emptyDesc" class="hide-span"></span>
-                            <textarea
-                                name="description"
-                                id="description"
-                                placeholder=" ..."
-                                maxlength="200"
-                            ></textarea>
-                            <span>"</span>
-                        </div>
-                    </div>
-                    <p>}</p>
-                </div>
-                <div class="buttons">
-                    <p>.cancel()</p>
-                    <p>.addProject(<span>project</span>)</p>
-                </div>
-            </div>
-        </main>
+        <a href="/html/addproject.html">.addProject()</a>
     </body>
 </html>

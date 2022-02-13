@@ -116,6 +116,11 @@
   background-color: #f6f8f9;
 }
 
+.hamburger-items > li > a {
+  text-decoration: none;
+  color: #0f0f10;
+}
+
 #hamburger-toggle:checked ~ .hamburger-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,35 +143,6 @@
   top: 0px;
   -webkit-transform: rotate(155deg);
           transform: rotate(155deg);
-}
-
-body main {
-  height: calc(100vh - 53px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.title h1 {
-  margin-top: 50px;
-  font-weight: 500;
-}
-
-.title #underline {
-  margin-top: 10px;
-  margin-left: 25%;
-  width: 50%;
-  border-bottom: 2px solid #0f0f10;
 }
 
 .project-template {
@@ -241,7 +217,6 @@ body main {
   max-width: 225px;
   background-color: #f6f8f9;
   border: none;
-  text-overflow: ellipsis;
   resize: none;
 }
 
@@ -300,7 +275,7 @@ body main {
   background-color: #0f0f10;
   font-size: 14px;
   text-align: center;
-  padding: 3px 0px;
+  padding: 7px 0px;
   border-radius: 0px 0px 5px 5px;
   cursor: pointer;
 }
@@ -321,5 +296,147 @@ body main {
 .project-template .buttons p span {
   font-size: 14px;
   font-weight: 500;
+}
+
+body > main > div {
+  width: calc(100% - 40px);
+}
+
+.interaction-buttons {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.interaction-buttons .search-wrapper,
+.interaction-buttons .plus-wrapper {
+  width: 50%;
+}
+
+.interaction-buttons .search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.interaction-buttons .plus-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.interaction-buttons .search-wrapper .search,
+.interaction-buttons .plus-wrapper .plus {
+  background-color: #0f0f10;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.interaction-buttons div img {
+  width: 16px;
+  height: 16px;
+}
+
+.all-projects-container {
+  margin-top: 40px;
+}
+
+.interaction-buttons .plus-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f6f8f9;
+  width: 155px;
+  max-width: 155px;
+}
+
+.interaction-buttons .plus-text p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #0f0f10;
+}
+
+.interaction-buttons .plus-text p:first-child {
+  padding: 5px 0px 5px 5px;
+}
+
+.interaction-buttons .plus-text p:last-child {
+  padding: 5px 5px 5px 0px;
+}
+
+.interaction-buttons #name {
+  min-width: 32px;
+  width: 32px;
+  max-width: 100px;
+  border: none;
+  background-color: #f6f8f9;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.interaction-buttons #name:focus-visible {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+body main {
+  height: calc(100vh - 53px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.title h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.title #underline {
+  margin-top: 10px;
+  margin-left: 25%;
+  width: 50%;
+  border-bottom: 2px solid #0f0f10;
 }
 /*# sourceMappingURL=styles.css.map */

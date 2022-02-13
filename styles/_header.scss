@@ -87,6 +87,11 @@
     background-color: $darkWhite;
 }
 
+.hamburger-items > li > a {
+    text-decoration: none;
+    color: $black;
+}
+
 #hamburger-toggle:checked ~ .hamburger-items {
     display: flex;
 }

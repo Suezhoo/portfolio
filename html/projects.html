@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - My projects</title>
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <script src="../scripts/projects.js" type="module" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="hamburger-wrapper">
+                    <input type="checkbox" id="hamburger-toggle" />
+                    <label for="hamburger-toggle" class="hamburger-container">
+                        <div class="hamburger"></div>
+                    </label>
+                    <ul class="hamburger-items">
+                        <li><a href="../index.html">.home()</a></li>
+                        <li><a href="./projects.html">.projects()</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <div class="title">
+                    <h1>My Projects</h1>
+                    <div id="underline"></div>
+                    <div class="interaction-buttons">
+                        <div class="search-wrapper">
+                            <div class="search normal">
+                                <img
+                                    src="../assets/images/icons/PNG/search.png"
+                                    alt="search"
+                                />
+                            </div>
+                        </div>
+                        <div class="plus-wrapper">
+                            <div class="plus normal">
+                                <img
+                                    src="../assets/images/icons/PNG/plus.png"
+                                    alt="plus"
+                                />
+                            </div>
+                            <div class="hide" id="plus-text">
+                                <p>.addProject("</p>
+                                <span id="emptyName" class="hide-span"></span>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="name"
+                                    maxlength="24"
+                                />
+                                <p>")</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-projects-container"></div>
+            </div>
+        </main>
+    </body>
+</html>

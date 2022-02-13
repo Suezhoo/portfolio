@@ -1,0 +1,86 @@
+body > main > div {
+    width: calc(100% - 40px);
+}
+
+.interaction-buttons {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.interaction-buttons .search-wrapper,
+.interaction-buttons .plus-wrapper {
+    width: 50%;
+}
+
+.interaction-buttons .search-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.interaction-buttons .plus-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.interaction-buttons .search-wrapper .search,
+.interaction-buttons .plus-wrapper .plus {
+    background-color: $black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interaction-buttons div img {
+    width: 16px;
+    height: 16px;
+}
+
+.all-projects-container {
+    margin-top: 40px;
+}
+
+.interaction-buttons .plus-text {
+    display: flex;
+    flex-direction: row;
+    background-color: $darkWhite;
+    width: 155px;
+    max-width: 155px;
+}
+
+.interaction-buttons .plus-text p {
+    font-size: 12px;
+    font-weight: 400;
+    color: $black;
+}
+.interaction-buttons .plus-text p:first-child {
+    padding: 5px 0px 5px 5px;
+}
+.interaction-buttons .plus-text p:last-child {
+    padding: 5px 5px 5px 0px;
+}
+
+.interaction-buttons #name {
+    min-width: 32px;
+    width: 32px;
+    max-width: 100px;
+    border: none;
+    background-color: $darkWhite;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.interaction-buttons #name:focus-visible {
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
