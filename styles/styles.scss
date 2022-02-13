@@ -26,11 +26,12 @@ body main {
     text-align: center;
     margin-top: 50px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .title #underline {
     margin-top: 10px;
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 35%;
+    width: 30%;
     border-bottom: 2px solid $black;
 }
